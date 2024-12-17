@@ -1,0 +1,60 @@
+.container {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "create social social schedule"
+    "create manage maintain schedule"
+    "write manage maintain schedule"
+    "write faster grow grow"
+    ;
+}
+
+.create {
+    background: lightpink;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.social {
+    background: purple;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.schedule {
+    background: rgb(247, 143, 247);
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.write {
+    background: gold;
+    grid-column: 1 / 2;
+    grid-row: 2.5 / 5;
+}
+
+.manage {
+    background: salmon;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.maintain {
+    background-color: gold;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.faster {
+    background: #f9f9f9;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.grow {
+    background: purple;
+    grid-column: 3 / -1;
+    grid-row: 3 / 4;
+}
